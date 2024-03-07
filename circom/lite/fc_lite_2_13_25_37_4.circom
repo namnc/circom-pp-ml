@@ -82,6 +82,7 @@ template ShiftRight(k) {
 template Sign() {
     signal input in;
     signal output sign;
+    sign <== in < 0;
 }
 
 template div_relu(k) {
